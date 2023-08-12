@@ -69,7 +69,7 @@ function promptQuestions() {
 // functions for viewing roles added with mysql2.
 function viewallDeps() {
 
-    // the SELECT choses what we want to change using the AS command which renames the department name
+    // the SELECT choses what we want to change using the AS command 
     const sql2 = `SELECT department.id, department.name AS Department FROM department;`
     db.query(sql2, (err, res) => {
         if (err) {
