@@ -3,7 +3,7 @@
 
 ## Description
 
-- The goal of this project is to create a seeds.sql, schema.sql, and connect it to a server using mysql 2 and inquirer. We are required to make an empoloyee database that allows the user to 
+- The goal of this project is to create a seeds.sql, schema.sql, and connect it to a server using mysql 2 and inquirer. We are required to make an employee database that allows the user to 
                  'view all departments',
                  'view all roles',
                   'view all employees',
@@ -12,7 +12,7 @@
                      'add an employee',
                       'update an employee role',
                       'Quit'
-  from the command line. When the user installs the required dependencies and sources the seeds/schema using sql, they can run 'npm start' to get prompted the options in the terminal.
+  from the command line. When the user installs the required dependencies and sources the seeds/schema using sql, they can run 'npm start' to get the options prompted in the terminal.
 ## Table of contents
 
 1. [ Description ](#Description)
