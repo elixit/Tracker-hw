@@ -3,7 +3,7 @@
 
 ## Description
 
-- The goal of this project is to create a seeds.sql, schema.sql, and connect it to a server using mysql 2 and inquirer. We are required to make an employee database that allows the user to 
+- The goal of this project is to create a seeds.sql, schema.sql, and create a sql database on server.js.  using node, mysql 2 and inquirer. We are required to make an employee database that allows the user to 
                  'view all departments',
                  'view all roles',
                   'view all employees',
