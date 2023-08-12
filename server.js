@@ -34,8 +34,52 @@ function promptQuestions() {
                       'update an employee role',
                       'Quit',]}
 
+// the prompt is assigned to each user option/selection - allows user to view / add / and update department/roles/employee
+    ]).then((prompt) => {
+        switch(prompt.userOptions) {
+            case 'view all departments':
+                viewallDeps();
+                break;
+            case 'view all roles':
+                viewallRoles(); 
+                break;
+            case 'view all employees':
+                viewAllemployees();
+                break;
+            case 'add a department':
+                addDepartment();
+                break; 
+            case 'add a role':
+                addRole();
+                break;
+            case 'add an employee':
+                addEmployee();
+                break;
+            case 'update an employee role':
+                updateEmployeerole();
+                break;
 
-let deletedRow = ''
+                // ends the server
+            case 'Quit':
+                console.log('quitting');
+                db.end();
+                break;
+        }
+    });
+};
+// functions for viewing roles added with mysql2.
+function viewallDeps() {
+
+    // the SELECT choses what we want to change using the AS command which renames the department name
+    const sql2 = `SELECT department.id, department.name AS Department FROM department;`
+    db.query(sql2, (err, res) => {
+        if (err) {
+            return;
+        }
+        console.log(res);
+        promptQuestions();
+    });
+};let deletedRow = ''
 
 db.query('SELECT * FROM department, ', function (err, results) {
   console.log(results);
