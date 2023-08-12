@@ -1,24 +1,38 @@
-const express = require('express');
-const mysql = require('mysql2');
-
-
-const PORT = process.env.PORT || 3001;
-const app = express();
-
-
-app.use(express.urlencoded({ extended: false }));
-app.use(express.json());
-
-
+// adding required modules
+const inquirer = require("inquirer");
+const mysql = require("mysql2");
+// database connected
 const db = mysql.createConnection(
-  {
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'department_db'
-  },
-  console.log(`Connected to the department_db database.`)
+    {
+        host: "localhost",
+        user: "root",
+        password: "komodo14",
+        database: "employees_db",
+    },
+    console.log(`on employees_db database.`)
 );
+// adding function that will prompt the user questions and connecting to database
+db.connect(function (res) {
+    console.log("starting");
+    promptQuestions();
+});
+
+// choices given to user 
+function promptQuestions() {
+    inquirer.prompt([
+{
+            type: 'list',
+            name: 'userOptions',
+            message: 'Select an option?',
+            choices:[
+                'view all departments',
+                 'view all roles',
+                  'view all employees',
+                   'add a department',
+                    'add a role',
+                     'add an employee',
+                      'update an employee role',
+                      'Quit',]}
 
 
 let deletedRow = ''
