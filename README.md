@@ -10,10 +10,7 @@
                    'add a department',
                     'add a role',
                      'add an employee',
-                      'update an employee role'  from the command line.  A feature to 'Quit' the terminal was added. 
- When the user installs the required dependencies and sources the seeds/schema using sql, they can run 'npm start' to get the options prompted in the terminal.
-
-- used sql2 for SELECT, AS, FROM, INNER JOIN, ON, CONCAT, LEFT JOIN, ORDER BY, VALUES, SET, functions which allowed database to be structured according to each function.
+                      'update an employee role'  from the command line.  A feature to 'Quit' the terminal was added. When the user installs the required dependencies and sources the seeds/schema using sql, they can run 'npm start' to get the options prompted in the terminal. Used sql2 for SELECT, AS, FROM, INNER JOIN, ON, CONCAT, LEFT JOIN, ORDER BY, VALUES, SET, functions which allowed database to be structured according to each function.
 
 ## Table of contents
 
