@@ -31,7 +31,8 @@
 
 
 ## Usage
- - imported required packages: mysql2, inquirer
+ - imported required packages: node.js mysql2, inquirer
+ - npm i to get node.js
  - to install dependencies: npm i inquirer@8.2.4, npm i mysql2
  - set password in server.js
  - source schema/seeds: mysql -u root -p
