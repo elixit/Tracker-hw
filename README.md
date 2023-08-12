@@ -45,6 +45,7 @@
 - seeds.sql used to keep data on employee database 
 - schema.sql used to structure employee database
 - inquirer used to prompt user questions
+- mysql2 used to perform queries
 
 
 
