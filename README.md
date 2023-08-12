@@ -32,29 +32,24 @@
 
 ## Usage
  - imported required packages: mysql2, inquirer
- - to install dependencies: npm i inquirer@8.2.4
+ - to install dependencies: npm i inquirer@8.2.4, npm i mysql2
  - set password in server.js
- - source schema/seeds: mysql root -u -p
- - middleware set up for getting API and HTML.
- - backend created so user input is transferred to JSON database.
- - server.js created to process enviornment on heroku.
- - urlencoded processes the string into a URL.
- - static was used to serve "public" files on to main page.
+ - source schema/seeds: mysql -u root -p
+ - navigate to proper folder and run npm start
 
 ## Installation 
-- index.js
-- notes.js
-- server.js
-- json
-- express
-- static
-- urlencoded
+- server.js used to connect host to sql 
+- seeds.sql used to keep data on employee database 
+- schema.sql used to structure employee database
+- inquirer used to prompt user questions
+
 
 
 ## Screenshot 
 
 
-![8964040A-3BB0-4E42-BD69-FA389106F7F9](https://github.com/elixit/note-taker/assets/63372291/a24cd49f-4468-470b-a57e-805c415969ea)
+ 
+![Image 8-11-23 at 7 54 PM](https://github.com/elixit/Tracker-hw/assets/63372291/64010f5c-0004-41e3-b3f5-d7865f213a75)
 
 
 ## License
