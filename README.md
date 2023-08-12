@@ -35,6 +35,7 @@
  - to install dependencies: npm i inquirer@8.2.4, npm i mysql2
  - set password in server.js
  - source schema/seeds: mysql -u root -p
+ - enter password when prompted
  - navigate to proper folder and run npm start
    
 
