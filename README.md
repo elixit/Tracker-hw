@@ -31,8 +31,10 @@
 
 
 ## Usage
- - imported required packages: path, express, uuid
- - uuid appended to user notes.
+ - imported required packages: mysql2, inquirer
+ - to install dependencies: npm i inquirer@8.2.4
+ - set password in server.js
+ - source schema/seeds: mysql root -u -p
  - middleware set up for getting API and HTML.
  - backend created so user input is transferred to JSON database.
  - server.js created to process enviornment on heroku.
