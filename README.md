@@ -10,9 +10,11 @@
                    'add a department',
                     'add a role',
                      'add an employee',
-                      'update an employee role',
-                      'Quit'
-  from the command line. When the user installs the required dependencies and sources the seeds/schema using sql, they can run 'npm start' to get the options prompted in the terminal.
+                      'update an employee role'  from the command line.  A feature to 'Quit' the terminal was added. 
+ When the user installs the required dependencies and sources the seeds/schema using sql, they can run 'npm start' to get the options prompted in the terminal.
+
+- used sql2 for SELECT, AS, FROM, INNER JOIN, ON, CONCAT, LEFT JOIN, ORDER BY, VALUES, SET, functions which allowed database to be structured according to each function.
+
 ## Table of contents
 
 1. [ Description ](#Description)
@@ -36,6 +38,7 @@
  - set password in server.js
  - source schema/seeds: mysql -u root -p
  - navigate to proper folder and run npm start
+   
 
 ## Installation 
 - server.js used to connect host to sql 
