@@ -159,15 +159,15 @@ function addNewrole() {
 // function to add a new employee to database
 function addNewemployee() {
     const sql2 = `SELECT * FROM employee`;
-    db.query(sql2, (err, res) => {
-        employeeChoices = res.map(employees => ({
+    db.query(sql2, (err, array) => {
+        employeeChoices = array.map(employees => ({
             // merges first name and last name
             name: (employees.first_name + employees.last_name),
             value: employees.id}));
 // employee role selection
     const sql2 = `SELECT * FROM role`;
-    db.query(sql2, (err, res) => {
-        roleChoices = res.map(role => ({
+    db.query(sql2, (err, array) => {
+        roleChoices = array.map(role => ({
             name: role.title,
             value: role.id}));
             // name, role, and employees manager adjusted according to user input
@@ -196,7 +196,7 @@ function addNewemployee() {
                 }
             ]).then((id) => {
                 const sql2 = `INSERT INTO employee SET first_name='${id.first}', last_name= '${id.last}', role_id= ${id.role};`
-                db.query(sql2, (err, res) => {
+                db.query(sql2, (err, array) => {
                     if (err) {
                         console.log(err);
                         return;
